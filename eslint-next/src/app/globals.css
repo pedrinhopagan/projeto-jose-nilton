@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff;
+  --bgAlt: #023047;
+  --text: #000;
+  --textLowlight: #ccc;
+  --textAlt: #fff;
+  --primaryColor:#ffb703;
+  --secondaryColor: #fb8500;
+  --accentColor: #00A8E8;
+  --extraColor: #0093C8;
+  --swiper-navigation-color: #fff
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: white;
+}
+
+::selection {
+  background-color: #003459; /* Cor de fundo quando o texto é selecionado */
+  color: #252525; /* Cor do texto selecionado */
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .section-spacing {
+    @apply px-8 md:px-12 pb-12 lg:pb-20 2xl:pb-32 lg:px-16 xl:px-44 2xl:px-64;
+  }
+}
